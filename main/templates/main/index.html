@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scala Dental</title>
+</head>
+<body>
+    Working with PyCharm and a real template
+
+    {% if staff %}
+        <ul>
+        {% for staff_member in staff %}
+            <li>{{ staff_member.name }}({{ staff_member.position }})</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+</body>
+</html>
