@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Scala Dental</title>
-</head>
-<body>
-    Working with PyCharm and a real template
+{% extends "main/base.html" %}
 
-    {% if staff %}
-        <ul>
-        {% for staff_member in staff %}
-            <li>{{ staff_member.name }}({{ staff_member.position }})</li>
-        {% endfor %}
-        </ul>
-    {% endif %}
-
-</body>
-</html>
+{% block maincontent %}
+<section class="slice slice-lg">
+    <div class="container">
+        <div class="mb-md text-center">
+            <h3 class="heading h3">This is the homepage</h3>
+        </div>
+    </div>
+</section>
+{% endblock %}

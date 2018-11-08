@@ -1,0 +1,190 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+
+    <title>Purpose Website UI Kit - Professional Website UI Kit by Webpixels</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800">
+
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="{% static 'main/vendor/@fortawesome/fontawesome-free/css/all.min.css' %}">
+
+    <!-- Page plugins -->
+    <link type="text/css" href="{% static 'main/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/theme.css' %}">
+
+</head>
+
+<body class="bg-secondary">
+
+    <header class="header-transparent" id="header-main">
+
+        <!-- Topbar -->
+        <div id="navbar-top-main" class="navbar-top navbar-light bg-white border-bottom">
+            <div class="container">
+                <div class="navbar-nav align-items-center">
+                    <div class="d-inline-block d-lg-inline-block">
+                        <span class="navbar-text mr-3">General Dentistry</span>
+                    </div>
+                    <div class="ml-auto">
+                        <ul class="nav">
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="contact">300 North Middletown Rd, Pearl River, NY</a>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <span class="navbar-text"><i class="fas fa-slash"></i></span>
+                            </li>
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="contact">(845) 735-0195</a>
+                            </li>
+                            <li class="nav-item d-inline-block d-md-none">
+                                <a class="nav-link" href="tel:8457350195"><i class="fas fa-phone"></i></a>
+                            </li>
+                            <li class="nav-item d-inline-block d-md-none">
+                                <a class="nav-link" href="ouroffice"><i class="fas fa-map-marked"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Main navbar -->
+
+        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-light bg-white" id="navbar-main">
+            <div class="container">
+                <a class="navbar-brand mr-lg-5" href="../index.html">
+                    <img alt="Image placeholder" src="../assets/img/brand/dark.png" style="height: 50px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-main-collapse">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../index.html">Our Office</a>
+                        </li>
+                       <li class="nav-item ">
+                            <a class="nav-link" href="../index.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        {% block maincontent %}
+        <section class="slice slice-lg">
+            <div class="container">
+                <div class="mb-md text-center">
+                    <h3 class="heading h3">Replace this content</h3>
+                </div>
+            </div>
+        </section>
+        {% endblock %}
+
+    </main>
+
+
+    <footer class="footer footer-dark bg-gradient-primary">
+        <div class="container">
+            <div class="row pt-md">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <a href="../index.html">
+                        <img src="../assets/img/brand/white.png" alt="Footer logo" style="height: 70px;">
+                    </a>
+                    <p class="text-sm">A unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</p>
+                </div>
+                <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Account</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../pages/account-profile.html">Profile</a>
+                        </li>
+                        <li><a href="../pages/account-settings.html">Settings</a>
+                        </li>
+                        <li><a href="../pages/account-billing.html">Billing</a>
+                        </li>
+                        <li><a href="../pages/account-notifications.html">Notifications</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">About</h6>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#">Services</a>
+                        </li>
+                        <li><a href="#">Contact</a>
+                        </li>
+                        <li><a href="#">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-sm-4 mb-5 mb-lg-0">
+                    <h6 class="heading mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Terms</a>
+                        </li>
+                        <li><a href="#">Privacy</a>
+                        </li>
+                        <li><a href="#">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
+                <div class="col-md-6">
+                    <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                        &copy; {% now "Y" %} Dante Scala, DMD. Joseph Scala, DMD. General Dentistry. All rights reserved.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Core -->
+    <script src="{% static 'main/vendor/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'main/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'main/vendor/in-view/dist/in-view.min.js' %}"></script>
+
+    <!-- Page plugins -->
+    <script src="{% static 'main/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js' %}"></script>
+
+    <!-- Theme JS -->
+
+    <script src="{% static 'main/js/theme.min.js' %}"></script>
+
+
+</body>
+
+</html>
