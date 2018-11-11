@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="Webpixels">
 
-    <title>Purpose Website UI Kit - Professional Website UI Kit by Webpixels</title>
+    <title>{% block title %}Scala Dental{% endblock %}</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
@@ -34,7 +34,7 @@
     <header class="header-transparent" id="header-main">
 
         <!-- Topbar -->
-        <div id="navbar-top-main" class="navbar-top navbar-light bg-white border-bottom">
+        <div id="navbar-top-main" class="navbar-top navbar-dark bg-dark border-bottom">
             <div class="container">
                 <div class="navbar-nav align-items-center">
                     <div class="d-inline-block d-lg-inline-block">
@@ -46,7 +46,7 @@
                                 <a class="nav-link" href="contact">300 North Middletown Rd, Pearl River, NY</a>
                             </li>
                             <li class="nav-item d-none d-md-inline-block">
-                                <span class="navbar-text"><i class="fas fa-slash"></i></span>
+                                <span class="navbar-text"><i class="fas fa-tooth"></i></span>
                             </li>
                             <li class="nav-item d-none d-md-inline-block">
                                 <a class="nav-link" href="contact">(845) 735-0195</a>
@@ -66,9 +66,9 @@
 
         <!-- Main navbar -->
 
-        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-light bg-white" id="navbar-main">
+        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
             <div class="container">
-                <a class="navbar-brand mr-lg-5" href="../index.html">
+                <a class="navbar-brand mr-lg-5" href="/">
                     <img alt="Image placeholder" src="../assets/img/brand/dark.png" style="height: 50px;">
                 </a>
 
@@ -79,10 +79,10 @@
                 <div class="collapse navbar-collapse" id="navbar-main-collapse">
                     <ul class="navbar-nav align-items-lg-center">
                         <li class="nav-item ">
-                            <a class="nav-link" href="../index.html">Our Office</a>
+                            <a class="nav-link" href="{% url 'ouroffice' %}">Our Office</a>
                         </li>
                        <li class="nav-item ">
-                            <a class="nav-link" href="../index.html">Contact</a>
+                            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
                         </li>
                     </ul>
                 </div>
