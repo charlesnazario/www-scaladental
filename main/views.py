@@ -1,20 +1,22 @@
 from django.shortcuts import render
+from django.db.models import Q
 from .models import StaffMember
 
 def index(request):
 
-    context = {}
-    return render(request, 'main/index.html', context)
+    # Retrieve doctors from database and assign to list
+    doctors = []
+    doctors.append(StaffMember.objects.get(name_key='dantescala'))
+    doctors.append(StaffMember.objects.get(name_key='josephscala'))
 
-def ouroffice(request):
+    # Retrieve staff from database (without doctors) and assign to list
+    staff = StaffMember.objects.exclude(
+        Q(name_key='dantescala') | Q(name_key='josephscala')
+    ).order_by('name')
 
-    staff = StaffMember.objects.all()
     context = {
+        'doctors': doctors,
         'staff': staff,
     }
 
-    return render(request, 'main/ouroffice.html', context)
-
-def contact(request):
-    context = {}
-    return render(request, 'main/contact.html', context)
+    return render(request, 'main/index.html', context)
