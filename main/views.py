@@ -19,4 +19,4 @@ def index(request):
         'staff': staff,
     }
 
-    return render(request, 'main/index.html', context)
+    return render(request, 'main/index-v1.html', context)

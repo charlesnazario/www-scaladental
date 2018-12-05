@@ -1,0 +1,429 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+
+    <title>Scala Dental</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800">
+
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="{% static 'main/vendor/@fortawesome/fontawesome-free/css/all.min.css' %}">
+
+    <!-- Page plugins -->
+    <link type="text/css" href="{% static 'main/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'main/css/theme.css' %}">
+
+</head>
+
+<body class="bg-white">
+
+    <header class="header-transparent" id="header-main">
+
+        <!-- Topbar -->
+        <div id="navbar-top-main" class="navbar-top navbar-dark bg-secondary border-bottom">
+            <div class="container">
+                <div class="navbar-nav align-items-center">
+                    <div class="d-inline-block d-lg-inline-block">
+                        <a class="nav-link" href="tel:8457350195">Call Us: (845) 735-0195</a>
+                    </div>
+                    <div class="ml-auto">
+                        <ul class="nav">
+                            <li class="nav-item d-none d-md-inline-block">
+                                <a class="nav-link" href="https://www.google.com/maps/place/Dr.+Dante+Scala,+DDS/@41.070597,-74.0144361,17z/data=!4m12!1m6!3m5!1s0x89c2e88eb9c0b611:0x4aacd3c0646369e!2sDr.+Dante+Scala,+DDS!8m2!3d41.070593!4d-74.0122474!3m4!1s0x89c2e88eb9c0b611:0x4aacd3c0646369e!8m2!3d41.070593!4d-74.0122474" target="_blank">300 North Middletown Rd (Suite 1), Pearl River, NY</a>
+                            </li>
+                            <li class="nav-item d-inline-block d-md-none">
+                                <a class="nav-link" href="https://www.google.com/maps/place/Dr.+Dante+Scala,+DDS/@41.070597,-74.0144361,17z/data=!4m12!1m6!3m5!1s0x89c2e88eb9c0b611:0x4aacd3c0646369e!2sDr.+Dante+Scala,+DDS!8m2!3d41.070593!4d-74.0122474!3m4!1s0x89c2e88eb9c0b611:0x4aacd3c0646369e!8m2!3d41.070593!4d-74.0122474" target="_blank"><i class="fas fa-map-marked"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Main navbar -->
+
+        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
+            <div class="container">
+                <a class="navbar-brand mr-lg-5" href="/">
+                    <img alt="Image placeholder" src="../assets/img/brand/dark.png" style="height: 50px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-main-collapse">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item ">
+                            <a href="#services" class="nav-link scroll-me" >Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#about_us" class="nav-link scroll-me" >About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#office_tour" class="nav-link scroll-me" >Office Tour</a>
+                        </li>
+                       <li class="nav-item ">
+                            <a href="#contact_us" class="nav-link scroll-me">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url({% static 'main/img/spotlight-3.jpg' %}); background-position: center center;">
+            <div class="spotlight-holder py-lg py-lg-0" style="height: 898px;">
+                <span class="mask bg-gradient-dark opacity-6"></span>
+                <div class="container py-md d-flex align-items-center">
+                    <div class="col">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-7 col-lg-7 text-center">
+                                <h1 class="text-white lh-150 mb-4">Caring for you and your family's dental needs</h1>
+                                <p class="lead mb-4 text-white mt-4">
+                                    Conveniently located in Pearl River New York, Dr. Dante Scala and Dr. Joseph Scala
+                                    have been proudly serving Rockland County patients for over 30 years.  Our general
+                                    dentistry practice provides a modern and comfortable experience that will
+                                    leave you smiling for years to come.</p>
+                                <span class="clearfix"></span>
+                                <div class="mt-5">
+                                <a href="#contact_us" class="btn btn-secondary btn-circle btn-translate--hover mr-lg-4">Contact us</a>
+                                <a href="#office_tour" class="btn btn-outline-info btn-circle btn-translate--hover  ">Tour the office</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- -->
+
+
+    <!-- Services -->
+
+        <section class="slice slice-lg bg-secondary" id="services">
+            <div class="container">
+                <div class="row row-grid">
+                    <div class="col-lg-4">
+                        <h4>Services</h4>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li class="lead py-1">Branding</li>
+                                    <li class="lead py-1">Art Direction</li>
+                                    <li class="lead py-1">Marketing</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li class="lead py-1">Branding</li>
+                                    <li class="lead py-1">Art Direction</li>
+                                    <li class="lead py-1">Marketing</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li class="lead py-1">Branding</li>
+                                    <li class="lead py-1">Art Direction</li>
+                                    <li class="lead py-1">Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-container" data-shape-style="curve" data-shape-position="bottom">
+                <svg class="shape-fill-white" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path d="M 0 0 c 0 0 200 50 500 50 s 500 -50 500 -50 v 101 h -1000 v -100 z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+
+        <section class="slice slice-lg pb-0 bg-white" data-separator="rounded-continuous" data-separator-bg="dark" id="about_us">
+            <div class="container d-inline px-0 pt-lg-0">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="mb-md text-center">
+                            <h6 class="text-primary">About our office</h6>
+                            <h3 class="h1 font-weight-400 lh-150 my-4">Let us make your visit enjoyable from start to finish.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-12 mt-5 mt-lg-0 align-self-end">
+                        <img alt="Image placeholder" src="{% static 'main/img/staff.png' %}" class="img-fluid img-center">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-lg bg-dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center">
+                            <p class="h3 lh-160 text-white font-italic font-weight-300" style="font-family: 'Playfair Display', serif;">
+                                "Friendly staff! Dr. Scala is wonderful and excited about his work, and he truly cares
+                                about his patients. Every time I come in I have a wonderful experience."
+                            </p>
+                            <span class="text-muted mt-4">Reuben — Reviewed on Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slice slice-lg">
+            <div class="container">
+
+                <div class="mb-md text-center">
+                    <h3>The Doctors</h3>
+                    <div class="fluid-paragraph text-center mt-4">
+                        <p class="lead lh-180">{% lorem 20 w %}</p>
+                    </div>
+                </div>
+
+                <div class="row row-grid align-items-center">
+                    <div class="col-lg-6 ">
+                        <img alt="Image placeholder" src="{% static 'main/img/'%}{{ doctors.0.photo_src }}" class="img-center img-fluid rounded shadow">
+                    </div>
+                    <div class="col-lg-6 ml-lg-auto">
+                        <div class="pr-md-4">
+                            <h5 class="card-title mb-0">{{ doctors.0.name }}</h5>
+                            <p class="text-muted mb-1">{{ doctors.0.title }}</p>
+                            {{ doctors.0.biography | safe}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-grid align-items-center pt-lg-5">
+                    <div class="col-lg-6 order-lg-2">
+                        <img alt="Image placeholder" src="{% static 'main/img/' %}{{ doctors.1.photo_src }}" class="img-center img-fluid rounded shadow">
+                    </div>
+                    <div class="col-lg-6 order-lg-1 ml-lg-auto">
+                        <div class="pr-md-4">
+                            <h5 class="card-title mb-0">{{ doctors.1.name }}</h5>
+                            <p class="text-muted mb-1">{{ doctors.1.title }}</p>
+                            {{ doctors.1.biography | safe}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% if staff %}
+        <section class="slice slice-lg delimiter-top">
+            <div class="container">
+                <div class="mb-md text-center">
+                    <h3>Our Office Team</h3>
+                </div>
+
+                <div class="row row-grid">
+
+                    {% for staffmember in staff %}
+                    <div class="col-lg-3">
+                        <div class="card overflow-hidden" data-animate-hover="2">
+                            <div class="overflow-hidden">
+                                <div class="animate-this">
+                                    <img alt="Image placeholder" class="card-img-top" src="{% static 'main/img/' %}{{ staffmember.photo_src }}">
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0">{{ staffmember.name }}</h5>
+                                <p class="text-muted mb-0">{{ staffmember.title }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if forloop.counter != 1 and forloop.counter|divisibleby:4 and forloop.counter < staff|length  %}
+                </div>
+                <div class="row row-grid">
+                    {% endif %}
+
+                {% endfor %}
+
+                </div>
+            </div>
+        </section>
+        {% endif %}
+
+        <section class="slice slice-lg bg-noise bg-cover bg-size--cover" style="background-image: url({% static 'main/img/office-door-2.jpg' %}); background-position: left center;" id="office_tour">
+            <div class="mask bg-dark opacity-3"></div>
+            <div class="container">
+                <div style="display:none;" class="bg-transparent">
+                    <a href="{% static 'main/img/officetour-frontdoor.jpg' %}" data-fancybox="office" data-caption="caption">
+                        <img src="{% static 'main/img/officetour-frontdoor.jpg' %}" class="img-fluid rounded" >
+                    </a>
+                    <a href="{% static 'main/img/officetour-examroom.jpg' %}" data-fancybox="office" data-caption="caption">
+                        <img src="{% static 'main/img/officetour-examroom.jpg' %}" class="img-fluid rounded" >
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card bg-dark py-5 px-4 shadow-lg">
+                            <div class="card-body">
+                                <h2 class="heading h2 text-white">Take a look around</h2>
+                                <p class="lead lh-180 text-white mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                                <div class="btn-container mt-5">
+                                    <a data-fancybox-trigger="office" class="btn btn-info btn-circle" href="javascript:;">
+                                        Tour the office</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="slice slice-lg bg-secondary" id="contact_us">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="mb-md text-center">
+                            <h6 class="text-primary">Contact information</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-grid align-items-center justify-content-around">
+                    <div class="col-lg-5">
+                        <div class="img-back-shape">
+                            <img alt="Image placeholder" src="{% static 'main/img/office-outside.jpg'%}" class="img-center img-fluid rounded shadow-darker">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="pr-md-4">
+                            <h3 class="font-weight-light">Schedule your appointment <strong class="font-weight-700">today</strong></h3>
+                            <p class="lead mb-5">
+                                We are happily accepting new patients at our brand new state of the art office, and provide
+                                a variety of office hours to meet your needs.</p>
+                            <div class="card shadow border-0 mb-4">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon icon-shape icon-teal rounded-circle">
+                                            <i class="far fa-address-card"></i>
+                                        </div>
+                                        <div class="icon-text pl-4">
+                                            <h5 class="font-weight-bold">Address and contact details</h5>
+                                            <p>300 North Middletown Road, Suite 1<br>Pearl River, New York, 10965</p>
+
+                                            <a href="https://www.google.com/maps/place/Dr.+Dante+Scala,+DDS/@41.070597,-74.0144361,17z/data=!4m12!1m6!3m5!1s0x89c2e88eb9c0b611:0x4aacd3c0646369e!2sDr.+Dante+Scala,+DDS!8m2!3d41.070593!4d-74.0122474!3m4!1s0x89c2e88eb9c0b611:0x4aacd3c0646369e!8m2!3d41.070593!4d-74.0122474" target="_blank" class="btn btn-sm btn-outline-info">Open in Google Maps</a>
+                                            <p class="lead mb-0 mt-4">
+                                                T: <a href="tel:8457350195">(845) 735-0195</a>
+                                                <br>
+                                                F: (845) 735-3255
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow border-0">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon icon-shape icon-green rounded-circle">
+                                            <i class="far fa-clock"></i>
+                                        </div>
+                                        <div class="icon-text pl-4">
+                                            <h5 class="font-weight-bold">Office hours</h5>
+                                            <div class="row pb-2 pb-sm-1">
+                                                <div class="col-md-4">Monday</div>
+                                                <div class="col-md-5">8:00 AM - 5:00 PM</div>
+                                            </div>
+                                            <div class="row pb-2 pb-sm-1">
+                                                <div class="col-md-4">Tuesday</div>
+                                                <div class="col-md-5">9:30 AM - 7:00 PM</div>
+                                            </div>
+                                            <div class="row pb-2 pb-sm-1">
+                                                <div class="col-md-4">Wednesday</div>
+                                                <div class="col-md-5 text-warning">Closed</div>
+                                            </div>
+                                            <div class="row pb-2 pb-sm-1">
+                                                <div class="col-md-4">Thursday</div>
+                                                <div class="col-md-5">9:30 AM - 7:00 PM</div>
+                                            </div>
+                                            <div class="row pb-2 pb-sm-1">
+                                                <div class="col-md-4">Friday</div>
+                                                <div class="col-md-5">9:00 AM - 5:00 PM</div>
+                                            </div>
+                                            <div class="row pb-2 pb-sm-1">
+                                                <div class="col-md-4">Saturday *</div>
+                                                <div class="col-md-5">9:00 AM - 5:00 PM</div>
+                                            </div>
+                                            <div class="row pb-2 pb-sm-1">
+                                                <div class="col-md-4">Sunday</div>
+                                                <div class="col-md-5 text-warning">Closed</div>
+                                            </div>
+                                            <p class="mb-0 mt-2">* We are open the first saturday of every month from September through May.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer footer-dark bg-gradient-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-md-between py-4 delimiter-top">
+                <div class="col-md-6">
+                    <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                        &copy; {% now "Y" %} Dante Scala, DMD. Joseph Scala, DMD. General Dentistry. All rights reserved.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Core -->
+    <script src="{% static 'main/vendor/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'main/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'main/vendor/in-view/dist/in-view.min.js' %}"></script>
+
+    <!-- Page plugins -->
+    <script src="{% static 'main/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js' %}"></script>
+
+    <!-- Theme JS -->
+    <script src="{% static 'main/js/theme.min.js' %}"></script>
+
+
+</body>
+
+</html>
