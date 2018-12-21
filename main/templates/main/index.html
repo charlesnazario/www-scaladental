@@ -10,10 +10,10 @@
     <meta name="description" content="">
     <meta name="author" content="Webpixels">
 
-    <title>Scala Dental</title>
+    <title>Scala and Scala Dental</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+    <link rel="icon" href="{% static 'main/img/favicon.ico' %}" type="image/png">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800">
@@ -34,7 +34,7 @@
     <header class="header-transparent" id="header-main">
 
         <!-- Topbar -->
-        <div id="navbar-top-main" class="navbar-top navbar-light bg-secondary border-bottom">
+        <div id="navbar-top-main" class="navbar-top navbar-dark bg-secondary border-bottom">
             <div class="container">
                 <div class="navbar-nav align-items-center">
                     <div class="d-inline-block d-lg-inline-block">
@@ -57,10 +57,10 @@
 
         <!-- Main navbar -->
 
-        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-light bg-secondary" id="navbar-main">
+        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
             <div class="container">
                 <a class="navbar-brand mr-lg-5" href="/">
-                    <img alt="Image placeholder" src="../assets/img/brand/dark.png" style="height: 50px;">
+                    <h5 class="text-white mb-0">Scala & Scala Dental</h5>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,48 +91,30 @@
 
     <main>
 
-        <section class="slice slice-lg pb-0 bg-white" data-separator="rounded-continuous" data-separator-bg="dark" id="about_us">
-            <div class="container d-inline px-0 pt-lg-0">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="mb-md text-center">
-                            <h3 class="h1 font-weight-400 lh-150 my-4">Let us make your visit enjoyable from start to finish.</h3>
+        <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url({% static 'main/img/spotlight-3.jpg' %}); background-position: center center;">
+            <div class="spotlight-holder py-lg py-lg-0" style="height: 898px;">
+                <span class="mask bg-gradient-dark opacity-6"></span>
+                <div class="container py-md d-flex align-items-center">
+                    <div class="col">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-md-7 col-lg-7 text-center">
+                                <h1 class="text-white lh-150 mb-4">Caring for you and your family's dental needs</h1>
+                                <p class="lead mb-4 text-white mt-4">
+                                    Conveniently located in Pearl River New York, Dr. Dante Scala and Dr. Joseph Scala
+                                    have been proudly serving Rockland County patients for over 30 years.  Our general
+                                    dentistry practice provides a modern and comfortable experience that will
+                                    leave you smiling for years to come.</p>
+                                <span class="clearfix"></span>
+                                <div class="mt-5">
+                                    <a href="#contact_us" class="btn btn-secondary btn-circle btn-translate--hover mr-lg-4">Contact us</a>
+                                    <a href="#office_tour" class="btn btn-outline-info btn-circle btn-translate--hover  ">Tour the office</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-12 mt-5 mt-lg-0 align-self-end">
-                        <img alt="Image placeholder" src="{% static 'main/img/staff.png' %}" class="img-fluid img-center">
                     </div>
                 </div>
             </div>
         </section>
-
-{#        <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url({% static 'main/img/spotlight-3.jpg' %}); background-position: center center;">#}
-{#            <div class="spotlight-holder py-lg py-lg-0" style="height: 898px;">#}
-{#                <span class="mask bg-gradient-dark opacity-6"></span>#}
-{#                <div class="container py-md d-flex align-items-center">#}
-{#                    <div class="col">#}
-{#                        <div class="row align-items-center justify-content-center">#}
-{#                            <div class="col-md-7 col-lg-7 text-center">#}
-{#                                <h1 class="text-white lh-150 mb-4">Caring for you and your family's dental needs</h1>#}
-{#                                <p class="lead mb-4 text-white mt-4">#}
-{#                                    Conveniently located in Pearl River New York, Dr. Dante Scala and Dr. Joseph Scala#}
-{#                                    have been proudly serving Rockland County patients for over 30 years.  Our general#}
-{#                                    dentistry practice provides a modern and comfortable experience that will#}
-{#                                    leave you smiling for years to come.</p>#}
-{#                                <span class="clearfix"></span>#}
-{#                                <div class="mt-5">#}
-{#                                <a href="#contact_us" class="btn btn-secondary btn-circle btn-translate--hover mr-lg-4">Contact us</a>#}
-{#                                <a href="#office_tour" class="btn btn-outline-info btn-circle btn-translate--hover  ">Tour the office</a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </section>#}
-
-    <!-- -->
 
 
     <!-- Services -->
@@ -140,33 +122,70 @@
         <section class="slice slice-lg bg-secondary" id="services">
             <div class="container">
                 <div class="row row-grid">
-                    <div class="col-lg-4">
+                    <div class="col-lg-2">
                         <h4>Services</h4>
                     </div>
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <ul class="list-unstyled">
-                                    <li class="lead py-1">Branding</li>
-                                    <li class="lead py-1">Art Direction</li>
-                                    <li class="lead py-1">Marketing</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4">
-                                <ul class="list-unstyled">
-                                    <li class="lead py-1">Branding</li>
-                                    <li class="lead py-1">Art Direction</li>
-                                    <li class="lead py-1">Marketing</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4">
-                                <ul class="list-unstyled">
-                                    <li class="lead py-1">Branding</li>
-                                    <li class="lead py-1">Art Direction</li>
-                                    <li class="lead py-1">Marketing</li>
-                                </ul>
+                    <div class="col-lg-5">
+                        <div data-animate-hover="1">
+                            <div class="card shadow-sm animate-this">
+                                <div class="card-body py-5 px-lg-5">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon icon-lg bg-white text-white">
+                                            <img alt="Image placeholder" src="{% static 'main/img/icon-preventative.png' %}" class="img-fluid img-center">
+                                        </div>
+                                        <div class="icon-text pl-4">
+                                            <h5 class="h5">Preventative</h5>
+                                            <p class="my-2">
+                                                <ul>
+                                                    <li>Adult and child cleanings</li>
+                                                    <li>Oral cancer screening</li>
+                                                    <li>Sealants</li>
+                                                    <li>Fluoride treatments</li>
+                                                    <li>Nightguards</li>
+                                                    <li>Zoom teeth whitening</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div data-animate-hover="1">
+                            <div class="card shadow-sm animate-this">
+                                <div class="card-body py-5 px-lg-5">
+                                    <div class="d-flex align-items-start">
+                                        <div class="icon icon-lg bg-white text-white">
+                                            <img alt="Image placeholder" src="{% static 'main/img/icon-restorative.png' %}" class="img-fluid img-center">
+                                        </div>
+                                        <div class="icon-text pl-4">
+                                            <h5 class="h5">Restorative & Diagnostic</h5>
+                                            <p class="my-2">
+                                                <ul>
+                                                    <li>Fillings (tooth colored)</li>
+                                                    <li>Crowns</li>
+                                                    <li>Implant restorations</li>
+                                                    <li>Dentures</li>
+                                                    <li>Digital and panoramic x-rays</li>
+                                                    <li>Intra-oral camera</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row row-grid">
+                    <div class="col-lg-2">
+                        <h4>Insurance</h4>
+                    </div>
+                    <div class="col-lg-10">
+                        We accept a variety of insurance plans and can help you determine what benefits your plan covers.
+                        please call our office for more information.
                     </div>
                 </div>
             </div>
@@ -291,11 +310,23 @@
             <div class="mask bg-dark opacity-3"></div>
             <div class="container">
                 <div style="display:none;" class="bg-transparent">
-                    <a href="{% static 'main/img/officetour-frontdoor.jpg' %}" data-fancybox="office" data-caption="caption">
+                    <a href="{% static 'main/img/officetour-frontdoor.jpg' %}" data-fancybox="office" data-caption="Entrance to office">
                         <img src="{% static 'main/img/officetour-frontdoor.jpg' %}" class="img-fluid rounded" >
                     </a>
-                    <a href="{% static 'main/img/officetour-examroom.jpg' %}" data-fancybox="office" data-caption="caption">
+                    <a href="{% static 'main/img/officetour-examroom.jpg' %}" data-fancybox="office" data-caption="Exam room">
                         <img src="{% static 'main/img/officetour-examroom.jpg' %}" class="img-fluid rounded" >
+                    </a>
+                    <a href="{% static 'main/img/officetour-hallway.jpg' %}" data-fancybox="office" data-caption="Exam room hallway">
+                        <img src="{% static 'main/img/officetour-hallway.jpg' %}" class="img-fluid rounded" >
+                    </a>
+                    <a href="{% static 'main/img/officetour-xray.jpg' %}" data-fancybox="office" data-caption="Panaoramic x-ray machine">
+                        <img src="{% static 'main/img/officetour-xray.jpg' %}" class="img-fluid rounded" >
+                    </a>
+                    <a href="{% static 'main/img/officetour-outside.jpg' %}" data-fancybox="office" data-caption="Front of building on North Middletown Rd.">
+                        <img src="{% static 'main/img/officetour-outside.jpg' %}" class="img-fluid rounded" >
+                    </a>
+                    <a href="{% static 'main/img/officetour-overhead.jpg' %}" data-fancybox="office" data-caption="View of office from overhead">
+                        <img src="{% static 'main/img/officetour-overhead.jpg' %}" class="img-fluid rounded" >
                     </a>
                 </div>
                 <div class="row">
@@ -303,7 +334,7 @@
                         <div class="card bg-dark py-5 px-4 shadow-lg">
                             <div class="card-body">
                                 <h2 class="heading h2 text-white">Take a look around</h2>
-                                <p class="lead lh-180 text-white mt-4">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                                <p class="lead lh-180 text-white mt-4">In 2018, we relocated to a brand new, state of the art office right down the street on North Middletown Road.  Our new office provides all the latest in dental technology to make your visit more enjoyable.</p>
                                 <div class="btn-container mt-5">
                                     <a data-fancybox-trigger="office" class="btn btn-info btn-circle" href="javascript:;">
                                         Tour the office</a>
