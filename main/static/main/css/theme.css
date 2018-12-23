@@ -13074,11 +13074,6 @@ button.bg-lighter:focus
     filter: saturate(150%);
 }
 
-.img-back-shape img
-{
-    background: url(../img/backgrounds/img-bg-circles.svg) no-repeat scroll center center/100% 100% border-box;
-}
-
 .opacity-0,
 .opacity-0--hover:hover,
 .opacity-container:hover .opacity-0--hover
@@ -13493,13 +13488,6 @@ button.bg-lighter:focus
 [data-separator-bg='darker']:after
 {
     background: #020b13;
-}
-
-[data-separator='bottom-wave']
-{
-    background-image: url('../img/backgrounds/bottom-wave.svg'), linear-gradient(to bottom, #510fa8, #6312cd);
-    background-repeat: no-repeat; 
-    background-position: bottom center, center;
 }
 
 .shape-container
