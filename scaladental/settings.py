@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'wwwscaladental',
         'USER': 'wwwscaladental_user',
-        'PASSWORD': 'Dsjs8689a',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
         'PORT': '',
     }
