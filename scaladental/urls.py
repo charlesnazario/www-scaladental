@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import HttpResponse
 
 urlpatterns = [
     path('', include('main.urls')),
     path('index.html', include('main.urls')),
+    path('google7de43d906e2f8f49.html',lambda r: HttpResponse("google-site-verification: google7de43d906e2f8f49.html", content_type="text/plain")),
     path('admin/', admin.site.urls),
 ]
+
+
