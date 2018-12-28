@@ -1,3 +1,5 @@
+TRUNCATE ONLY main_staffmember;
+
 INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (1, 'dantescala', 'Dante Scala, DMD', 'Dentist', 'dantescala.jpg', '<p>
 Dr. Dante Scala is a lifelong resident of Rockland County, New York, having graduated from Clarkstown South High School.  He is a graduate of Farleigh Dickinson University in Hackensack, New Jersey with a Bachelor of Science degree in Biology, magna cum laude, and  Fairleigh Dickinson University School of Dentistry in New Jersey, where he earned his Doctor of Dentistry degree and NYS license to practice in 1986.
 </p>
@@ -18,11 +20,11 @@ He has been partnered with his brother, Dr. Dante Scala, since 1991 in Pearl Riv
 </p>');
 INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (3, 'jenna', 'Jenna', 'Dental Hygienist', 'jenna.jpg', 'NA');
 INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (4, 'michelle', 'Michelle', 'Office Manager', 'michelle.jpg', 'NA');
-INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (5, 'jennifer', 'Jennifer', 'Billing Coordinator', 'jennifer.jpg', 'NA');
-INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (6, 'kayla', 'Kayla', 'Dental Assistant', 'kayla.jpg', 'NA');
-INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (7, 'carleigh', 'Carleigh', 'Dental Assistant', 'carleigh.jpg', 'NA');
-INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (8, 'diana', 'Diana', 'Dental Assistant', 'diana.jpg', 'NA');
+INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (5, 'jennifer', 'Jennifer', 'Office Admin / Insurance', 'jennifer.jpg', 'NA');
+INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (6, 'kayla', 'Kayla', 'Assistant / Front Desk', 'kayla.jpg', 'NA');
+INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (7, 'carleigh', 'Carleigh', 'Assistant / Front Desk', 'carleigh.jpg', 'NA');
+INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (8, 'diana', 'Diana', 'Assistant / Front Desk', 'diana.jpg', 'NA');
 INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (9, 'kerry', 'Kerry', 'Dental Hygienist', 'kerry.jpg', 'NA');
 INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (10, 'amanda', 'Amanda', 'Dental Hygienist', 'amanda.jpg', 'NA');
-INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (11, 'lillian', 'Lillian', 'Administrator', 'lillian.jpg', 'NA');
-INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (12, 'dolores', 'Dolores', 'Dental Assistant', 'dolores.jpg', 'NA');
+INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (11, 'lillian', 'Lillian', 'Administrative Assistant', 'lillian.jpg', 'NA');
+INSERT INTO main_staffmember (id, name_key, name, title, photo_src, biography) VALUES (12, 'dolores', 'Dolores', 'Assistant', 'dolores.jpg', 'NA');
